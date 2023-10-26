@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+          <div class="title"><span>Lunchsy</span></div>
+          <form action="#" [formGroup]="registerForm">
+            <div class="row">
+              <i class="fas fa-user" style="color: black;"></i>
+              <input type="text" placeholder="Enter your Name" formControlName="name">
+            </div>
+            <small *ngIf="name?.dirty && name?.invalid" class="text-danger">*Name is required</small>
+            
+            <div class="row">
+                <i class="fas fa-envelope" style="color: black;"></i>
+                <input type="text" placeholder="Enter your Email Id" formControlName="email">
+              </div>
+              <small *ngIf="email?.dirty && email?.invalid" class="text-danger">*EmailId is required</small>
+            
+              <div class="row">
+                <i class="fas fa-mobile-alt" style="color: black;"></i>
+                <input type="text" placeholder="Enter your mobile number " formControlName="mobileNo">
+              </div>
+              <small *ngIf="mobileNo?.dirty && mobileNo?.invalid" class="text-danger">*Mobile number is required</small>
+            
+              <div class="row">
+                <i class="fas fa-lock" style="color: black;"></i>
+                <input type="password" placeholder="Enter your password" formControlName="password">
+              </div>
+              <small *ngIf="password?.dirty && password?.invalid" class="text-danger">*Password is required</small>
+            
+              <div class="row">
+                <i class="fas fa-lock" style="color: black;"></i>
+                <input type="password" placeholder="Confirm your password" formControlName="confirmpassword">
+              </div>
+              <small *ngIf="confirmpassword?.dirty && confirmpassword?.invalid" class="text-danger">*Password confirmation is required</small>
+              
+            <div class="row button">
+                <button (click)="onRegister()" type="submit" class="btn-btn-primary mt-4 w-100" >Register</button>
+            </div><br>
+            <div class="signup-link">Back to <a id="" routerLink="/login">Login </a></div>
+          </form>
+        </div>
+      </div>
+    
+</body>

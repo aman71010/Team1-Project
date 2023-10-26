@@ -1,0 +1,65 @@
+<div class="container">
+    <h2>SUBSCRIPTION PLANS</h2>
+</div>
+
+  <div class="body">
+    <p>Pick The Plan That Works Best For You!</p>
+  </div>
+
+  <div class = "subscribe-row">
+
+    <div class = "subscribe-col">
+        <h3>BASIC</h3>
+        <p>₹2000/Year</p>
+        <ul>
+            <li>Unlock Guaranteed Savings With Every Order.</li>
+            <li>Indulge In Fast Checkout Experience.</li>
+            <li>Standard Delivery Charges Apply.</li>
+        </ul>
+        <div class="payment-button text-center">
+            <button 
+                (click)="proceedTopay(2000); setChosenSubsType(0)" 
+                class="btn btn-pink"
+                [disabled]="AlreadySubscribed(0)"
+            >Subscribe</button>
+        </div>
+    </div>
+
+    <div class = "subscribe-col">
+        <h3>SILVER</h3>
+        <p>₹5000/Year</p>
+        <ul>
+            <li>Discount Of ₹1000 Per Year.</li>
+            <li>Unlock Guaranteed Savings With Every Order.</li>
+            <li>Indulge In Fast Checkout Experience.</li>
+            <li>Standard Delivery Charges Apply.</li>
+        </ul>
+        <div class="payment-button text-center">
+            <button 
+                (click)="proceedTopay(5000); setChosenSubsType(1)"
+                class="btn btn-pink"
+                [disabled]="AlreadySubscribed(1)"
+            >Subscribe</button>
+        </div>
+    </div>
+    
+    <div class = "subscribe-col">
+        <h3>GOLD</h3>
+        <p>₹7000/Year</p>
+        <ul>
+            <li>Discount Of ₹4000 Per Year.</li>
+            <li>25% Off Your First Box.</li>
+            <li>Able To Change Menu Selection Weekly.</li>
+            <li>Unlock Guaranteed Savings With Every Order.</li>
+            <li>Indulge In Fast Checkout Experience.</li>
+            <li>No Delivery Costs.</li>
+        </ul>
+        <div class="payment-button text-center">
+            <button 
+                (click)="proceedTopay(7000); setChosenSubsType(2)" 
+                class="btn btn-pink"
+                [disabled]="AlreadySubscribed(2)"
+            >Subscribe</button>
+        </div>
+    </div>
+</div>

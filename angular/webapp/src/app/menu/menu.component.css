@@ -1,0 +1,105 @@
+.example-card {
+  width: 250px;
+  height: 100%;
+  margin: 15px 0;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-container{
+  width: 300px;
+  height: 345px;
+  margin: 20px 0
+}
+
+.fading-bg-div {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), 
+              url(https://i.ibb.co/nw1NgmQ/image-3.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.fading-bg-div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5));
+  z-index: 1;
+}
+
+.my{
+  margin: 20px 0;
+}
+
+.bannerimg{
+  width: 100%;
+  height: 120px;
+}
+
+.cat{
+  margin-left: 8px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.mat-chip-active {
+  background-color: #e63946 !important;
+  color: #fff !important;
+}
+
+.menuImg{
+  width: 250px;
+  height: 150px;
+}
+
+.title{
+  font-size: 16px;
+  font-weight:900
+}
+
+.desc{
+  word-break: break-all;
+}
+
+.price{
+  color: #e63946;
+  margin-bottom: 45px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.button-container{
+  position: absolute;
+  bottom: 10px;
+}
+
+.paginator{
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+}
+
+.paginator ::ng-deep .ngx-pagination .current {
+  background: #e63946;
+  border-radius: 4px;
+  padding-left: 11px;
+  padding-right: 11px;
+}
+
+.paginator ::ng-deep .ngx-pagination a:hover, .ngx-pagination button:hover {
+  text-decoration: none;
+  background: #d4d4d4;
+  border-radius: 3px;
+  padding-left: 11px;
+  padding-right: 11px;
+}
+
+.paginator ::ng-deep .ngx-pagination a:focus, .ngx-pagination button:focus {
+  outline: none;
+  background: #d4d4d4;
+  text-decoration: none;
+}
